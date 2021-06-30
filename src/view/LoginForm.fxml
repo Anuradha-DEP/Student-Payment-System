@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="376.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@css/LoginFormStyles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+    <children>
+        <Label fx:id="lblTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="401.0" layoutY="61.0" text="Login">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="272.0" layoutY="153.0" prefHeight="51.0" prefWidth="319.0">
+            <children>
+                <TextField fx:id="txtUserName" accessibleText="UserName" layoutX="5.0" layoutY="20.0" prefHeight="26.0" prefWidth="545.0" promptText="Enter your Username here" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@css/LoginFormStyles.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="271.0" layoutY="233.0" prefHeight="51.0" prefWidth="319.0" stylesheets="@css/LoginFormStyles.css">
+            <children>
+                <TextField fx:id="txtPassword" accessibleText="Password" layoutX="5.0" layoutY="20.0" prefHeight="26.0" prefWidth="545.0" promptText="Enter your password here" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="380.0" prefWidth="250.0" style="-fx-background-color: C2C8C5;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="221.0" fitWidth="229.0" layoutX="10.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/admin-login.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+        <BorderPane layoutX="374.0" layoutY="323.0" prefHeight="36.0" prefWidth="115.0">
+            <center>
+                <JFXButton fx:id="btnLogin" alignment="CENTER" minHeight="36.0" onAction="#btnLogin_OnAction" prefHeight="36.0" prefWidth="172.0" style="-fx-text-fill: #3700B3;" text="LIGIN" />
+            </center>
+        </BorderPane>
+
+    </children>
+
+</AnchorPane>

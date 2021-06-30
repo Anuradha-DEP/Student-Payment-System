@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@css/PaymentFormStyles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+    <children>
+        <ImageView fx:id="imgLogo" fitHeight="48.0" fitWidth="48.0" layoutX="162.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/Payment.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="lblTitle" layoutX="229.0" layoutY="30.0" text="Payment Form">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+              <AnchorPane layoutX="13.0" layoutY="127.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="315.0">
+                  <children>
+                      <TextField fx:id="txtNIC" accessibleText="NIC" prefHeight="26.0" prefWidth="286.0" promptText="Eg. 83451234V" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                  </children>
+              </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="200.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.leftAnchor="10.0">
+               <children>
+                  <TextField fx:id="txtCourseId" accessibleText="Course Id" prefHeight="26.0" prefWidth="286.0" promptText="Eg. DEP" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="315.0" layoutY="123.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.rightAnchor="10.0">
+               <children>
+                  <TextField fx:id="txtName" accessibleText="Name" prefHeight="26.0" prefWidth="286.0" promptText="Eg. Nipun Samarawickrama" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="271.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.leftAnchor="10.0">
+               <children>
+                  <TextField fx:id="txtDescription" accessibleText="Description" layoutX="6.0" layoutY="20.0" prefHeight="26.0" prefWidth="286.0" promptText="Eg. Only Reg Fee" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="351.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.leftAnchor="10.0">
+               <children>
+                  <TextField fx:id="txtCourseFee" accessibleText="Course Fee" prefHeight="26.0" prefWidth="286.0" promptText="Rs: 100,000.00" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <BorderPane layoutX="210.0" layoutY="521.0">
+               <center>
+                  <JFXButton fx:id="btnMakePayment" alignment="CENTER" minHeight="36.0" onAction="#btnMakePayment_OnAction" prefHeight="36.0" prefWidth="172.0" style="-fx-text-fill: #3700B3;" text="MAKE PAYMENT" />
+               </center>
+            </BorderPane>
+      <AnchorPane layoutX="315.0" layoutY="200.0" prefHeight="51.0" prefWidth="275.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <TextField fx:id="txtBatchNo" accessibleText="Batch No" prefHeight="26.0" prefWidth="286.0" promptText="Eg. DEP 6" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="271.0" prefHeight="51.0" prefWidth="275.0">
+         <children>
+            <TextField fx:id="txtPaymentMethod" accessibleText="Payment Method" prefHeight="26.0" prefWidth="286.0" promptText="Eg. visa" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="351.0" prefHeight="51.0" prefWidth="275.0">
+         <children>
+            <TextField fx:id="txtPaidAmount" accessibleText="Paid Amount" prefHeight="26.0" prefWidth="286.0" promptText="Rs:100,000.00" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="429.0" prefHeight="51.0" prefWidth="275.0">
+         <children>
+            <TextField fx:id="txtRegistrationFee" accessibleText="Registration Fee" prefHeight="26.0" prefWidth="286.0" promptText="Rs:5000.00" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="315.0" layoutY="429.0" prefHeight="51.0" prefWidth="275.0">
+         <children>
+            <TextField fx:id="txtBalance" accessibleText="Balance" prefHeight="26.0" prefWidth="286.0" promptText="Rs:100,000.00" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtReceiptId" layoutX="14.0" layoutY="98.0" prefHeight="25.0" prefWidth="265.0" />
+      <TextField fx:id="txtDate" layoutX="321.0" layoutY="98.0" prefHeight="25.0" prefWidth="265.0" />
+         </children>
+
+</AnchorPane>
